@@ -29,7 +29,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <175>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
@@ -49,10 +49,10 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB                &kp Q         &kp W            &kp E                &kp R              &kp T            &kp Y      &kp U               &kp I                 &kp O             &kp P            &kp BSPC
-&HML CAPSLOCK LS(TAB)  &HML LCTRL A  &HML LEFT_ALT S  &HML LEFT_COMMAND D  &HML LEFT_SHIFT F  &kp G            &kp H      &HMR RIGHT_SHIFT J  &HMR RIGHT_COMMAND K  &HMR RIGHT_ALT L  &HMR LCTRL SEMI  &kp SQT
-&kp LSHFT              &kp Z         &kp X            &kp C                &kp V              &kp B            &kp N      &kp M               &kp COMMA             &kp DOT           &kp FSLH         &HMR RIGHT_SHIFT RETURN
-                                                      &kp LEFT_COMMAND     &mo 2              &kp BACKSPACE    &kp SPACE  &mo 1               &kp RALT
+&kp TAB                    &kp Q  &kp W  &kp E             &kp R  &kp T            &kp Y      &kp U  &kp I      &kp O    &kp P          &kp BSPC
+&HML LEFT_CONTROL LS(TAB)  &kp A  &kp S  &kp D             &kp F  &kp G            &kp H      &kp J  &kp K      &kp L    &kp SEMICOLON  &kp SQT
+&kp LSHFT                  &kp Z  &kp X  &kp C             &kp V  &kp B            &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH       &HMR RIGHT_SHIFT RETURN
+                                         &kp LEFT_COMMAND  &mo 2  &kp BACKSPACE    &kp SPACE  &mo 1  &kp RALT
             >;
         };
 
@@ -65,10 +65,10 @@
 
             display-name = "Lower";
             bindings = <
-&trans  &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &trans
-&trans  &trans        &trans        &trans        &trans        &trans          &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-&trans  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &trans    &trans    &trans  &trans     &trans  &bt BT_CLR
-                                    &trans        &kp DELETE    &trans          &trans    &trans    &trans
+&trans  &kp N1  &kp N2  &kp N3  &kp N4      &kp N5    &kp N6  &kp N7          &kp N8    &kp N9        &kp N0     &trans
+&trans  &trans  &trans  &trans  &trans      &trans    &trans  &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans      &trans    &trans  &trans          &trans    &trans        &trans     &bt BT_CLR
+                        &trans  &kp DELETE  &trans    &trans  &trans          &trans
             >;
         };
 
@@ -81,10 +81,10 @@
 
             display-name = "Raise";
             bindings = <
-&kp GRAVE   &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS          &kp KP_MULTIPLY    &kp LPAR              &kp RPAR               &kp BSPC
-&kp ESCAPE  &trans    &trans  &trans    &trans    &trans       &kp PLUS   &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
-&trans      &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans                &kp NON_US_BACKSLASH   &trans
-                              &trans    &trans    &trans       &trans     &trans            &trans
+&kp GRAVE   &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT       &kp CARET  &kp AMPS          &kp KP_MULTIPLY    &kp LPAR              &kp RPAR               &kp BSPC
+&kp ESCAPE  &trans        &trans        &trans        &trans        &trans          &kp PLUS   &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
+&trans      &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &kp MINUS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans                &kp NON_US_BACKSLASH   &trans
+                                        &trans        &trans        &trans          &trans     &trans            &trans
             >;
         };
 
