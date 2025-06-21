@@ -10,14 +10,24 @@
 
 / {
     behaviors {
-        HT: HT {
+        QHT: QHT {
             compatible = "zmk,behavior-hold-tap";
-            label = "HT";
+            label = "QHT";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <150>;
             flavor = "hold-preferred";
+        };
+
+        LHT: LHT {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LHT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            flavor = "tap-preferred";
         };
     };
 
@@ -33,10 +43,10 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB                   &kp Q           &kp W  &kp E             &kp R  &kp T    &kp Y      &kp U  &kp I      &kp O    &kp P          &kp BSPC
-&HT LEFT_CONTROL LS(TAB)  &mt LEFT_ALT A  &kp S  &kp D             &kp F  &kp G    &kp H      &kp J  &kp K      &kp L    &kp SEMICOLON  &kp SQT
-&kp LSHFT                 &kp Z           &kp X  &kp C             &kp V  &kp B    &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH       &HT RIGHT_SHIFT RETURN
-                                                 &kp LEFT_COMMAND  &mo 2  &mo 3    &kp SPACE  &mo 1  &kp RALT
+&kp TAB                    &kp Q            &kp W  &kp E      &kp R  &kp T    &kp Y      &kp U  &kp I      &kp O    &kp P          &kp BSPC
+&QHT LEFT_CONTROL LS(TAB)  &LHT LEFT_ALT A  &kp S  &kp D      &kp F  &kp G    &kp H      &kp J  &kp K      &kp L    &kp SEMICOLON  &kp SQT
+&kp LSHFT                  &kp Z            &kp X  &kp C      &kp V  &kp B    &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH       &QHT RIGHT_SHIFT RETURN
+                                                   &kp LMETA  &mo 2  &mo 3    &kp SPACE  &mo 1  &kp RALT
             >;
         };
 
