@@ -51,7 +51,7 @@
             // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
-            display-name = "Base";
+            display-name = "Home";
             bindings = <
 &kp TAB                    &kp Q            &kp W  &kp E      &kp R          &kp T    &kp Y      &kp U  &kp I      &kp O    &kp P          &kp BSPC
 &QHT LEFT_CONTROL LS(TAB)  &LHT LEFT_ALT A  &kp S  &kp D      &kp F          &kp G    &kp H      &kp J  &kp K      &kp L    &kp SEMICOLON  &kp SQT
@@ -67,7 +67,7 @@
             // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
-            display-name = "Lower";
+            display-name = "Num Nav BT";
             bindings = <
 &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6  &kp N7          &kp N8    &kp N9        &kp N0     &kp DELETE
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
@@ -83,7 +83,7 @@
             // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
-            display-name = "Raise";
+            display-name = "Symbols";
             bindings = <
 &kp GRAVE   &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT       &kp CARET  &kp AMPS          &kp KP_MULTIPLY    &kp LPAR              &kp RPAR               &kp BSPC
 &kp ESCAPE  &trans        &trans        &trans        &trans        &trans          &kp MINUS  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
@@ -99,6 +99,8 @@
 &trans  &trans  &trans  &trans                &trans                &trans    &trans  &trans         &trans        &trans            &trans   &trans
                         &trans                &trans                &trans    &trans  &trans         &trans
             >;
+
+            label = "Func";
         };
     };
 };
